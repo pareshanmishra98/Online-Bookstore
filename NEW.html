@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourBookstore</title>
+    <link rel="icon" href="./book-shop.png" type="image/x-icon">
+     
+    <style>
+html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin-top: -16px;
+            margin-left: 0px;
+            margin-right: 0px;
+            height: max-content;
+        }
+
+        #bg {
+            color: white;
+            background-image: url(./img2.jpg);
+        background-size: cover;
+            height: 830px;
+         
+        }
+        #op::before {
+            content: "";
+            background-color: black;
+            color: white;
+            position: absolute;
+            width: 1489px;
+            height: 50px;
+            opacity: .5;
+
+        }
+
+  
+        .content {
+  padding: 0px;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 23;
+  width: 100%;
+}
+
+
+.sticky + .content {
+  padding-top: 60px;
+}
+#nav ul input{
+    z-index:20;
+}
+        #nav ul li {
+            list-style: none;
+            float: left;
+            padding: 19px 37px;
+            color: white;
+            position: relative;
+        }
+        #contact ul li{
+            list-style: none;
+            float: left;
+            padding: 19px 37px;
+            color: white;
+            position: relative;
+        }
+#contact ul{
+    display: flex;
+    justify-content: center;
+}
+#contact ul li{
+    font-size: larger;
+
+}
+#contact{
+    background-color:  #502507;
+    color: white;
+}
+
+
+
+        #nav ul li a {
+            font-size: x-large;
+            text-decoration: none;
+            color: white;
+            font-size:125%;
+        }
+        
+        #nav ul li a:hover {
+
+            color: rgb(183, 179, 188);
+
+        }
+        #categories ul li a:hover {
+            color: rgb(106, 102, 110);
+
+        }
+        #contact ul li a {
+            text-decoration: none;
+            color: white;
+            font-size:125%;
+        }
+
+        #nav ul {
+            overflow: auto;
+        padding-left: 5px;
+        margin: 0;
+
+        }
+
+        #srch {
+            float: right;
+            padding: 15.5px 13px;
+            text-align: left;
+        }
+        
+        #box1{z-index:10;
+            width: 650px;
+    color: black;
+    box-shadow: -5.7px 11.4px 11.4px hsl(0, 0%, 100%);
+    height: 500px;
+    border-top-left-radius: 25px;
+border-bottom-left-radius: 25px;
+    background-color: white;
+    float: right;
+    position: sticky;
+    padding-top: 29px;
+    box-shadow: 20px;
+    margin-top: 200px;
+    padding-right: 64px;
+}
+
+.line-1{
+    position: absolute;
+    font-size: 162%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+   color: beige;
+   border-right: 2px solid rgba(255,255,255,.75);
+    margin-left: 0px;
+    margin-top: 150px;
+    transform: translateY(40%);
+}
+
+.anim-typewriter{
+  animation: typewriter 4s steps(50)  normal both,
+             blinkTextCursor .8s steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 30.5em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+#bg2{
+    color: black;
+border: 23px black solid;
+    background-image: url(./img1.jpg);
+    background-size: cover;
+    height: 830px;
+
+
+}
+#bg3{
+    color: black;
+border: 23px transparent solid;
+    background-image: url(./img1.jpg);
+    height: 525px;
+    background-size: cover;
+
+}
+#bg4{
+    color: black;
+border: 23px transparent solid;
+    background-image: url(./img1.jpg);
+    height: 970px;
+    background-size: cover;
+
+}
+.flex{
+    display: flex;
+color: black;           
+ height: 400px;
+border: 3px transparent dashed;
+justify-content: center;
+
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+text-align: center;
+}
+
+.flexbox{box-shadow: 10px 10px 15px black inset;
+    margin-top: 20px;
+    width: 33%;
+    transition: opacity 0.6s ease;
+}
+
+.flex:hover>:not(:hover){
+    opacity:0.4;
+
+}
+.flex1:hover>:not(:hover){
+    opacity:0.4;
+
+}
+.flex2:hover>:not(:hover){
+    opacity:0.4;
+
+}
+#categories{
+    margin-top: -80px;
+  
+}
+#categories h1{
+ text-align: center;
+}
+#categories ul{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+ 
+}
+#head1{
+    color: white;
+    text-align: center;
+}
+#head2{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+#head3{
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+}
+#head4{
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+}
+#head5{
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+}
+#head6{
+    color: white;
+    text-align: center;
+    padding-top: 120px;
+}
+#categories ul li{
+            list-style: none;
+            float: left;
+            padding: 19px 37px;
+            color:black;
+            position: relative;
+
+}
+
+.flexbox {
+            padding: 8px;
+            border: 4px rgb(141, 49, 49) solid;
+            border-radius: 20px;
+            height: 367px;
+            width: 285px;
+            margin: 30px, 50px;
+            background-color: rgb(234, 211, 211);
+        }
+        .img{
+    margin-top: 20px;
+    height: 283px;
+    width: 224px;
+        }
+
+        .flex1{
+    display: flex;
+    color: black;
+    height: 400px;
+
+    justify-content: space-between;
+    margin-right: 471px;
+    margin-left: 83px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.flex2{
+    display: flex;
+    color: black;
+    height: 400px;
+   
+    justify-content: space-between;
+    margin-right: 861px;
+    margin-left: 82px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+#categories ul li a {
+            text-decoration: none;
+            color: black;
+            font-size:125%;
+        }
+        #CK{
+            margin-top: 110px;
+            color: white;
+            text-align: center;
+        }
+
+        #container {
+    max-width: 100%;
+    margin: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+  #name{
+        width: 100%;
+        height: 55px;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {height: 50px;
+    margin-bottom: 8px;
+    width: 11%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+.con{
+    height: 20px;
+    width: 20px;
+}
+#headcon{
+    text-align: center;
+    color: white;
+
+    background-color: #502507;
+}
+#revbox{
+  
+    display: flex;
+color: black;           
+ height: 400px;
+
+justify-content: center;
+background-color: #502507;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+text-align: center;
+}
+.rev{margin-top: 50px;
+    padding: 20px;
+  
+    height: 295px;
+    width: 336px;
+    border-radius: 25px;
+    background-color: #fdfcd4;
+}
+
+#revimg1{
+    display: flex;
+    justify-content:end;
+    margin-left: 295px;
+    margin-top: -22px;
+height: 50px;
+width: 50px;
+border-radius: 50%;
+}
+#revimg2{
+    display: flex;
+    justify-content:end;
+    margin-left: 295px;
+height: 50px;
+width: 50px;
+border-radius: 50%;
+}
+#revimg3{
+    display: flex;
+    justify-content:end;
+    margin-left: 295px;
+    margin-top: -22px;
+height: 50px;
+width: 50px;
+border-radius: 50%;
+}
+#revimg4{
+    display: flex;
+    justify-content:end;
+    margin-left: 295px;
+    margin-top: 106px;
+height: 50px;
+width: 50px;
+border-radius: 50%;
+}
+
+
+
+#circ{
+    color: white;
+  
+    position: relative;
+    z-index: 22;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    background-color: red;
+    border-radius: 50%;
+    height: 173px;
+    width: 173px;
+    transform: translate(891px, -210px);
+    border: 6px orange dashed;
+    text-align: center;
+    box-shadow: 5px -3px 20px 2px black;
+}
+#p9{
+    transform: translate(0px, -162px);
+}
+#revhead{
+    text-align: center;
+    color: #ffffff;
+    background-color: #502507;
+}
+#heading{
+    font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+    </style>
+</head>
+<body>
+  
+     <div id="bg">
+        <div id="op">
+            <div id="nav">
+                <ul>
+                    <li><a href="#bg">Home</a></li>
+                    <li><a href="#p9">Categories</a></li>
+                    <li><a href="#container">Checkout</a></li>
+                    <li><a href="#rev">Reviews</a></li>
+                    <input type="text" id="srch" placeholder="Search for a book...">
+  
+                    <div id="searchResults"></div>
+                    <div>
+                </ul>
+               
+                </div>
+                
+        </div>
+        <div class="line-1 anim-typewriter">
+            <ul>
+                <h1 id="heading">WELCOME TO YourBookstore...</h1>
+            </ul>
+        </div>
+        <div id="box1">
+           
+            <ul><h1>Here the magic of storytelling awaits you at the click of a button! Dive into a world of literary wonders right from the comfort of your home. Whether you're an avid reader searching for your next adventure, a student seeking academic resources, our virtual shelves have something for everyone. The password will be sent to your mail as soon as we get the confirmation of your payment.
+<br></h1>
+            </ul>
+           
+    </div>
+    </div>
+    <div id="circ">
+        <h1>All books at Rs.150/- only</h1>
+            </div>
+</div>
+<p id="p9"></p>
+<div id="categories">
+    
+    <h1>Categories</h1>    
+    <hr>
+   <ul> <li><h2><a href="#bg2">Fiction</a></h2></li>
+    <li><h2><a href="#1">Horror</a></h2></li>
+    <li><h2><a href="#2">Thriller</a></h2></li>
+    <li><h2><a href="#3">Romance</a></h2></li>
+    <li><h2><a href="#4">History</a></h2></li>
+    <li><h2><a href="#5">Business</a></h2></li>
+    <li><h2><a href="#6">Bestsellers</a></h2></li>
+  
+    
+    </ul>
+</div>
+    <div id="bg2">
+       
+            <div id="head1">
+                <h1>Fiction</h1>
+            </div>
+          
+<div id="library" class="flex">
+    <div id="the hunger games" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/61I24wOsn8L._SY425_.jpg" alt=""></a><h3>The Hunger Games by Suzanne Collins</h3><h4>Rs. 259</h4></div>
+    <div id="1984" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/7180qjGSgDL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>1984 by George Orwell</h3></div>
+    <div id="the great gatsby" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/71V1cA2fiZL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>The Great Gatsby</h3></div>
+    <div id="to kill a mockingbird" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/81gepf1eMqL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>To Kill a Mockingbird</h3></div>
+</div>
+<div class="flex1">
+    <div id="the kite runner" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/619Kk-VLlNL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>The Kite Runner by Shakti Batra</h3></div>
+    <div id="the hobbit" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://rukminim2.flixcart.com/image/850/1000/l2ghgnk0/book/r/3/w/the-hobbit-original-imagdsy4qspgcjgz.jpeg?q=90&crop=falsehttps://m.media-amazon.com/images/I/7180qjGSgDL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>The Hobbit by J.R.R. Tolkien</h3></div>
+    <div id="the alchemist" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/51Z0nLAfLmL.jpg" alt=""></a><h3>The Alchemist by Paulo Coelho</h3></div>
+
+</div>
+</div>
+        
+    </div>
+    <div id="bg2">
+        <p id="1">
+            <div id="head2">
+                <h1>Horror</h1>
+            </div>
+          
+<div id="library" class="flex">
+    <div id="it" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/71N2oKE+cnL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>IT by Stephen King</h3></div>
+    <div id="the shining" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/91y0No7XvmL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>The Shining by Stephen King</h3></div>
+    <div id="dracula" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/81ESc05qN5L._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>Dracula by Bram Stoker</h3></div>
+    <div id="the hunger" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/81-906VGN5L._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>The hunger by Alma Katsu</h3></div>
+</div>
+<div class="flex1">
+    <div id="the ruins" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/81oNmUkGJuL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>The Ruins by Scott Smith</h3></div>
+    <div id="the stand" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/91YWt2jiowL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>The Stand by Stephen King</h3></div>
+    <div id="the terror" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/71tKuYPY2CS._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>The Terror by Dan Simmons</h3></div>
+
+</div>
+</div>
+<div id="bg2">
+    <p id="2">
+        <div id="head3">
+            <h1>Thriller</h1>
+        </div>
+      
+<div id="library" class="flex">
+<div id="the davinci code" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/91FIhvpochL._AC_UF350,350_QL50_.jpg" alt=""></a><h3>The Davinci Code by Dan Brown</h3></div>
+<div id="verity" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/41YvOZ4yauL.jpg" alt=""></a><h3>Verity by Colleen Hoover</h3></div>
+<div id="dark matter" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/91ay1NogaCL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>Dark Matter by Blake Crouch</h3></div>
+<div id="the guest list" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/81KRY3ltxHL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>The Guest List by Lucy Foley</h3></div>
+</div>
+<div class="flex">
+<div id="desert star" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/7165XmbMsAL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>Desert Star by Michael Connelly</h3></div>
+<div id="dark places" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/71Wm30jjysL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>Dark Places by Gillian Flynn</h3></div>
+<div id="killing floor" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/71qrvoQrqiL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>Killing Floor by Lee Child</h3></div>
+<div id="gone girl" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/71FZo7-3BnL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>Gone Girl by Gillian Flynn</h3></div>
+
+</div>
+</div>
+<div id="bg2">
+    <p id="3">
+        <div id="head4">
+            <h1>Romance</h1>
+        </div>
+      
+<div id="library" class="flex">
+<div id="fourth wing" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/915gqezyfJL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>Fourth Wing by Rebecca Yarros</h3></div>
+<div id="love redesigned" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/51pk0iHHM-L.jpg" alt=""></a><h3>Love Redesigned by Lauren Asher</h3></div>
+<div id="happy place" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/71OS-CG85lL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>Happy Place by Emily Henry</h3></div>
+<div id="beach read" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/414GPak1y8S.jpg" alt=""></a><h3>Beach Read by Emily Henry</h3></div>
+</div>
+<div class="flex2">
+<div id="ashes of you" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/71oSjKVWr7L._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>Ashes of You by Vatherine Cowles</h3></div>
+
+</div>
+</div>
+<div id="bg2">
+    <p id="4">
+        <div id="head5">
+            <h1>History</h1>
+       </div>
+      
+<div id="library" class="flex">
+<div id="orientalism" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/71JjwTzcL+L._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>Orientalism by Edward W. Said</h3></div>
+<div id="salt" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/71MSytdEgVL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>Salt by Mark Kurlansky</h3></div>
+<div id="1776" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/81CLRsxHXfL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>1776 by David McCollough</h3></div>
+<div id="the histories" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://images-eu.ssl-images-amazon.com/images/I/712IwJ5VIiL._AC_UL900_SR615,900_.jpg" alt=""></a><h3>The Histories by Herodotus</h3></div>
+</div>
+<div class="flex2">
+<div id="hiroshima" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/61nxfrnwvtL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>Hiroshima by John Hersey</h3></div>
+<div id="freedom at midnight" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/91tDbqeySSL._SY425_.jpg" alt=""></a><h3>Freedom at Midnight by Dominique Lapierre</h3></div>
+
+</div>
+</div> 
+<div id="bg3">
+     <p id="5"></p>  
+    <div id="head6">
+        <h1>Business</h1>
+    </div>
+  
+<div id="library" class="flex">
+<div id="zero to one" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/71uAI28kJuL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>Zero to One by Peter Thiel</h3></div>
+<div id="deep work" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/41W6GSfYejL.jpg" alt=""></a><h3>Deep Work by Cal Newport</h3></div>
+<div id="steve jobs" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/71PTAp96xLL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>Steve Jobs by Walter Isaacson</h3></div>
+<div id="rich dad poor dad" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/81BE7eeKzAL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>Rich Dad Poor Dad by Robert T. Kiyosaki</h3></div>
+</div>
+</div>
+</div>
+<div id="bg4">
+    <p id="6">
+        <div id="head3">
+            <h1>Bestsellers</h1>
+        </div>
+      
+<div id="library" class="flex">
+<div id="atomic habits" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/81Ls+SBCLiL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>Atomic Habits by James Clear</h3></div>
+<div id="the alchemist" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/51Z0nLAfLmL.jpg" alt=""></a><h3>The Alchemist by Paulo Coelho</h3></div>
+<div id="the housemaid" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/51cHVq9fX1L.jpg" alt=""></a><h3>The Housemaid by Frieda McFadden</h3></div>
+<div id="circe" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/B1eAVSHxJ4L._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>Circe by Madelline Miller</h3></div>
+</div>
+<div class="flex">
+<div id="dune" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/71oO1E-XPuL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>Dune by Frank Herbert</h3></div>
+<div id="outlander" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/71omNKSfqEL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>Outlander by Diana Gabaldon</h3></div>
+<div id="educated" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/71-4MkLN5jL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>Educated by Tara Westover</h3></div>
+<div id="pride & prejudice" class="flexbox"><a href="https://drive.google.com/uc?export=download&id=1QvET5eqG4DxxEYnaSMJCPlln8dhiqA2m"><img class="img" src="https://m.media-amazon.com/images/I/61H3BvN-naL._AC_UF1000,1000_QL80_.jpg" alt=""></a><h3>Pride & Prejudice by Jane Austen</h3></div>
+
+</div>
+</div>
+
+<div id="container">
+    <h1>Checkout</h1>
+    <form id="userDataForm">
+        <input type="text" id="name" placeholder="Enter name of the books" required><br>
+        <input type="email" id="email" placeholder="Enter Email" required><br>
+        <input type="submit" value="Submit" onclick="printmessage()">
+        <h3>Payment can be made at 0123456789@ybl</h3>
+    </form>
+    <h2>Our recent sales</h2>
+    <table id="userDataTable">
+        <thead>
+            <tr>
+                <th>Books</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="userDataBody">
+        </tbody>
+    </table>
+</div>
+
+<div id="rev">
+    <div id="revhead">
+        <h1>Our Reviews</h1>
+    </div>
+    <div id="revbox">
+        <div class="rev"><h3>YourBookstore stands out for its extensive range of books across various genres, catering to all tastes and interests. From bestsellers to niche titles, there's something for everyone. Navigating through their website is a breeze, thanks to its well-organized categories and search functionality. Whether you're searching for a specific title or exploring new reads, finding what you need is effortless.</h3><img id="revimg1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQETYuSTJn9Y_1_DsQZYoZQX47a2VV8anqEew&usqp=CAU" alt=""></div>
+        <div class="rev"><h3> Shopping at YourBookstore is a pleasure from start to finish. Their website is intuitively designed, offering a smooth and seamless shopping experience. From browsing through recommendations to adding items to your cart and checking out, every step is straightforward and user-friendly. Plus, the checkout process is quick and hassle-free, making it convenient for busy book lovers.</h3><img id="revimg2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa9NyJ76PCkhFCsYV-hRxIUEnC_zWtid0lGw&usqp=CAU" alt=""></div>
+        <div class="rev"><h3>YourBookstore's commitment to customer satisfaction is evident in their reliable delivery service and secure packaging. Orders are dispatched promptly, and deliveries are made in a timely manner. What's more, the books arrive in pristine condition, thanks to the careful and secure packaging. Whether it's a single book or a bulk order, you can trust YourBookstore to deliver your purchases safely to your doorstep.</h3><img id="revimg3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9xjL9oWd0aPzC3_OIcNZaDtvEZCSeh2zk9A&usqp=CAU" alt=""></div>
+        <div class="rev"><h3>YourBookstore's customer service is top-notch. They are responsive, helpful, and go above and beyond to address any queries or concerns promptly. It's reassuring to know that they prioritize customer satisfaction. </h3><img id="revimg4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrcbbnksFwFU7f0PUE3mqFg7owK3ZvAPVonw&usqp=CAU" alt=""></div>
+   
+    </div>
+</div>
+
+<div id="headcon" >
+<h1>Contact us</h1>
+</div>
+<div id="contact">
+    <ul>
+    <li><img class="con" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAABRFBMVEVHcEz4D5n9oAf9lAftEKn7lBXhA8VwFf3TPJF3Fv39tgX9egV9GvnpA7b9OFx2GPn7SUH9KXX9UjH////+AWH+Arv+wQPkANL+ygD9BKv+AZP+A27+Mkj/9fP+AYj+XS3+aRj+AXr+cJn+7/ubEvz+YQHUANn+J3Z6FPyIFPv+jQL+Tg/CAd6rAuX/vMT/17P0Asn/ruj+sQD+G3/+Pj3+SjX+dhz/vOD0bt3+ugD+Kmb+dwThGun+PST/y8r+xG3+GpL/rMr9D57+hAKUBuv+LlX+ghX+GGT+Bkb+IVb/s9b+X8P+nwHtAL3+pwH+lgOxEPvGGPXfYeb/xLbzFtHzAKr+N1r/6OH+Kzb7GLf+clD+fIL2uPH+WqP93/f+0O/+Vmb+im/oSOH+LLf+nTT+ylv+qV39Qcj+znvSgfr+mYnWgvrfdhN0AAAAE3RSTlMAx8/PX13K/gnMxsZdzdJhXcrGWouHNAAAAjlJREFUKJFN0utXokAYwOFptzL31u6+mMtVEImC1UxADRYjvGtq5a2Laff28v9/33ewzun3YTiHB2YGzhBCyGY8Fovt7OzWarVsNvsT295eXyW0jXgku6+yTUsmk+sbiPEdSpkaleXtqF7vMyGfIspkT8+wMu1ulM/ne73eeJXEKWX+qPAmtZxPJMbjFYKSOZkBzGf7L83mAPsJlh2H5AT7B+pdMo9Pv/SsQpkNOY6cYircJUfUWErdxfM9qBzHSeQXBvPkKHHBsvfd7j3LLmARziGUJIXiGcx6SGGJbqbEdhddrgTXkqKQ0ShfxjthGKigdjo44GJcB64VnicXF2wXOpKllKAkSRy+U8LVjiDN8wwJgiANR7yug6hYViBJKgSSgsgg6nozDbl2GwdG1y1LiWakyDCkXheuIHdOh7br6jqPyDMvKAjnVzD07RsQhcnEdZsi6Mwr2r5P0fErUBGEehsvTLMVIU9837yFoZlKpUQQczkc6u12K7dE0zQvYU+TZTlVoT+hMhEEAfGG4RVialoRpppXLBbly9vbS8exbaE1BZeihonwUK02Gg10nN5xznF3rSYvEc3zvEMQH4yBYVSrnifLuI4I6VbT4ojsVQ1jD2C6t2w4rEwBP7zetALysWoMjo9/i2+PifjXt+uutULW0PqFQmHr8fEw6umpqJmOLbg6Ht33aAcHW1EHhUJ/YDRwW44w+UYP9bsCpR80yv1BAzft2F82ojO/9mFJS+0f01e/f0X4DzXfhmzQgNUBAAAAAElFTkSuQmCC" alt=""><a href="https://www.instagram.com/yourbook.in/" target="_blank">  @YourBookstore</a></li>
+    <li><img class="con" src="https://e7.pngegg.com/pngimages/432/941/png-clipart-telephone-call-dialer-android-android-text-telephone-call-thumbnail.png" alt=""> :+919131127573</li>
+    <li><img class="con" src="https://i.pinimg.com/736x/a1/d1/4b/a1d14ba7881740c8c3e428a75132a2ae.jpg" alt=""> prashant288888@gmail.com </li>
+    <li></li>
+</ul>
+</div>
+
+
+<script>
+      function  printmessage()
+{alert("Thank you for placing your order! The passwords will be sent to your mail as soon as we can confirm the payment..");
+}
+
+</script>
+<script>
+  window.onscroll = function() {myFunction()};
+
+
+var navbar = document.getElementById("op");
+
+
+var sticky = navbar.offsetTop;
+
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+        </script>
+
+        <script>
+            window.addEventListener('load', function() {
+        loadSavedData();
+    });
+
+    
+    function loadSavedData() {
+        var savedData = JSON.parse(localStorage.getItem('userData')) || [];
+        savedData.reverse().forEach(function(data) {
+            addDataToTable(data.name, data.email);
+        });
+    }
+
+    function saveDataToLocalStorage(name, email) {
+        var savedData = JSON.parse(localStorage.getItem('userData')) || [];
+        savedData.unshift({name: name, email: email});
+        localStorage.setItem('userData', JSON.stringify(savedData));
+    }
+
+    document.getElementById("userDataForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        addDataToTable(name, email);
+        saveDataToLocalStorage(name, email);
+        document.getElementById("userDataForm").reset();
+    });
+
+    function addDataToTable(name, email) {
+        var table = document.getElementById("userDataBody");
+        var row = table.insertRow(0);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        cell1.innerHTML = name;
+        cell2.innerHTML = email;
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+    const srch = document.getElementById('srch');
+    
+
+    
+    function performSearch() {
+      const searchTerm = srch.value.trim();
+
+      if (searchTerm !== '') {
+        const foundElement = document.getElementById(searchTerm);
+        if (foundElement) {
+          foundElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+          alert('sorry, but this book is not available');
+        }
+      } else {
+        alert('Please enter a search term.');
+      }
+    }
+    srch.addEventListener('keypress', function(event) {
+      if (event.key === 'Enter') {
+        performSearch();
+      }
+    });
+  });
+
+        </script>
+</body>
+</html>
