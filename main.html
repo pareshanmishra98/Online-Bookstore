@@ -7,6 +7,16 @@
     <link rel="icon" href="./book-shop.png" type="image/x-icon">
      
     <style>
+        body {
+  transform: scale(0.9);
+  transform-origin: 0 0; /* Ensures scaling starts from the top-left corner */
+  -webkit-transform: scale(0.9); /* For older WebKit browsers */
+  -webkit-transform-origin: 0 0;
+  -moz-transform: scale(0.9); /* For older Firefox browsers */
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.9); /* For older Opera browsers */
+  -o-transform-origin: 0 0;
+}
 html {
             scroll-behavior: smooth;
         }
@@ -797,4 +807,5 @@ function myFunction() {
         </script>
 </body>
 </html>
+
 
